@@ -1,0 +1,58 @@
+.primary--colour {
+    color: var(--primaryColour);
+}
+
+.secondary--colour {
+    color: var(--secondaryColour);
+}
+
+.tertiary--colour {
+    color: var(--tertiaryColour);
+}
+
+.img--block {
+    display: block;
+}
+
+.letter--spacing {
+    letter-spacing: 1px;
+}
+
+.border--radius {
+    border-radius: var(--border-radius);
+}
+
+.border--radius--s {
+    border-radius: var(--border-radius-s);
+}
+
+.border--radius--l {
+    border-radius: var(--border-radius-l);
+}
+
+@media screen and (max-width: 820px) {
+    .hide--on--mobile {
+        display: none !important;
+    }
+}
+
+.card {
+    padding: 60px;
+    background-color: var(--white);
+}
+
+.flex {
+    display: flex;
+}
+
+.align--items--center {
+    align-items: center;
+}
+
+.relative {
+    position: relative;
+}
+
+.font--weight--bold {
+    font-weight: var(--font-weight-bold);
+}

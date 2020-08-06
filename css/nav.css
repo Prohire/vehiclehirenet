@@ -1,0 +1,102 @@
+.desktop__nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav__menu__btn {
+    display: none;
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+}
+
+.nav__item:last-child {
+    margin-left: var(--spacing-xl);
+}
+
+.nav__link {
+    text-decoration: none;
+    font-weight: var(--font-weight-bold);
+    white-space: nowrap;
+}
+
+.mobile__nav {
+    width: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility var(--transition-l), opacity var(--transition-l), transform var(--transition-l);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 105vh;
+    background: white;
+    z-index: 500;
+    padding: var(--gutter);
+    transform: translateX(100%);
+}
+
+@media screen and (max-width: 820px) {
+    .nav__wrapper {
+        max-width: 44px;
+        overflow: visible;
+        display: flex;
+        align-items: center;
+    }
+    .nav__menu__btn {
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        margin-right: -10px;
+        position: relative;
+        top: -2px;
+        z-index: 505;
+    }
+    .nav__menu__btn img {
+        width: 33px;
+        height: 33px;
+        margin: auto;
+    }
+    .nav__menu__btn--close {
+        display: none;
+    }
+    .nav__menu__btn--active .nav__menu__btn--close  {
+        display: block;
+    }
+    .nav__menu__btn--active .nav__menu__btn--open  {
+        display: none;
+    }
+    .desktop__nav {
+        display: none;
+    }
+    .mobile__nav--active {
+        visibility: visible;
+        opacity: 1;
+        transform: translateX(0%);
+    }
+    .logo__image__mobile {
+        width: 54px;
+    }
+    .nav__list__mobile {
+        display: block;
+        margin-top: 26px;
+    }
+    .nav__item__mobile {
+        border-top: 1px solid var(--border-colour-light);
+        display: flex;
+        align-items: center;
+    }
+    .nav__item__mobile a {
+        display: block;
+        font-size: var(--font-size-l);
+        padding: var(--gutter) 0;
+        text-decoration: none;
+        flex-grow: 1;
+    }
+}

@@ -1,0 +1,58 @@
+:root {
+    --body-bg: var(--white);
+
+    --border-colour-dark: rgba(1,1,1,0.25);
+    --border-colour: rgba(1,1,1,0.115);
+    --border-colour-light: rgba(1,1,1,0.075);
+
+    --border-radius-s: 2px;
+    --border-radius: 6px;
+    --border-radius-l: 12px;
+
+    --text-colour: var(--grey-darker);
+    --text-colour-light: var(--grey-light);
+    --font-family: "Karla", Sans-Serif;
+    --font-size-l: 18.75px;
+    --font-size: 16px;
+    --font-size-s: 14.75px;
+    --font-size-xs: 13.75px;
+    --font-weight: 400;
+    --font-weight-bold: 700;
+    --line-height: 1.4;
+    --line-height-l: 1.475;
+
+    --overlay-colour: rgba(1,1,1,0.4);
+
+    --footer-height: 165px;
+
+    --button-height: 40px;
+    --button-height-l: 48px;
+    --button-box-shadow: 0px 3px 5px -1px rgba(82, 63, 104, 0.06), 0px 6px 10px 0px rgba(82, 63, 104, 0.042), 0px 1px 18px 0px rgba(82, 63, 104, 0.036);
+
+    --box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 5px 0;
+    --box-shadow-l: rgba(0, 0, 0, 0.1) 0 4px 12px 0;
+    --box-shadow-xl: rgba(82, 63, 104, 0.06) 0px 3px 5px -1px, rgba(82, 63, 104, 0.043) 0px 6px 10px 0px, rgba(82, 63, 104, 0.035) 0px 1px 18px 0px;
+
+    --transition: 150ms ease;
+    --transition-l: 250ms ease;
+
+    --spacing-xxxxs: 1px;
+    --spacing-xxxs: 2px;
+    --spacing-xxs: 4px;
+    --spacing-xs: 8px;
+    --spacing-s: 10px;
+    --spacing: 12px;
+    --spacing-l: 14px;
+    --spacing-xl: 16px;
+    --spacing-xxl: 20px;
+    --spacing-xxxl: 28px;
+    --spacing-xxxxl: 32px;
+
+    --gutter: 40px;
+}
+
+@media screen and (max-width: 820px) {
+    :root {
+        --gutter: 22px;
+    }
+}

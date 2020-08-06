@@ -1,0 +1,20 @@
+{
+  "short_name": "VHN",
+  "name": "Vehicle Hire Network",
+  "description": "Vehicle Hire Network allows businesses to search for rental vehicles by location and hire them from local, trusted, independent vehicle hire companies",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "background_color": "#FFF",
+  "theme_color": "#FFF",
+  "display": "standalone"
+}

@@ -1,0 +1,44 @@
+.site__btn {
+    height: var(--button-height);
+    line-height: var(--button-height);
+    user-select: none;
+    font-weight: var(--font-weight-bold);
+    min-width: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--box-shadow);
+    padding: 0 var(--spacing-xxl);
+    border-radius: 100px;
+    white-space: nowrap;
+    transition: transform .25s ease, background-color .15s ease;
+    will-change: transform, background-color;
+    background-color: var(--white);
+    text-decoration: none;
+}
+
+.site__btn--link {
+    box-shadow: none;
+}
+
+@media screen and (min-width: 821px) {
+    .site__btn--link:hover {
+        background-color: var(--grey-lightest);
+    }
+}
+
+.site__btn--primary {
+    background: linear-gradient(270deg,rgba(var(--primaryColourRGB),.85),var(--primaryColour));
+    color: var(--white);
+}
+
+@media screen and (min-width: 821px) {
+    .site__btn:hover {
+        transform: scale(.95);
+    }
+}
+
+.btn--large {
+    height: var(--button-height-l);
+    line-height: var(--button-height-l);
+}

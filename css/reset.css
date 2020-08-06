@@ -1,0 +1,109 @@
+html {
+  overflow-y: scroll;
+  box-sizing: border-box;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+*,
+::after,
+::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+button,
+input,
+option,
+select,
+textarea {
+  background-color: var(--white);
+  color: var(--text-colour);
+  font-size: var(--font-size);
+  font-family: var(--font-family);
+  outline: 0 none;
+  border: 0 none;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+@supports (-webkit-touch-callout: none) {
+  input,
+  option,
+  textarea {
+    font-size: 16px;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+input[type=text]::-ms-clear {
+  display: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  cursor: pointer;
+  color: var(--text-colour);
+}
+
+.ui-helper-reset {
+  line-height: 1;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  font-family: var(--font-family);
+  -webkit-text-fill-color: var(--text-colour);
+  -webkit-box-shadow: 0 0 0px 1000px var(--white) inset;
+}
+
+::placeholder,
+.ui-placeholder {
+  color: var(--text-colour-light);
+  opacity: 1;
+}
+
+::-ms-clear {
+  display: none !important;
+}
+
+::-webkit-search-cancel-button {
+  display: none !important;
+}
+
+summary {
+  outline: 0 none;
+}
+
+::-webkit-details-marker {
+  display: none !important;
+}
+
+p {
+  line-height: var(--line-height);
+}
+
+svg {
+  display: block;
+  overflow: hidden;
+}
