@@ -116,6 +116,8 @@
 
 .hero--about img {
     filter: saturate(1.15);
+    position: relative;
+    top: 15px;
 }
 
 @media screen and (min-width: 821px) {
