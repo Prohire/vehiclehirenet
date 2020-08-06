@@ -49,6 +49,7 @@ body {
 
 .widget__wrapper {
     margin-top: var(--spacing);
+    min-height: 76px;
 }
 
 @media screen and (max-width: 820px) {
