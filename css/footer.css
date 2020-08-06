@@ -22,6 +22,10 @@
 }
 
 .footer a {
+    color: var(--grey-3);
+}
+
+.footer a:hover {
     color: var(--white);
 }
 
@@ -41,8 +45,7 @@
 }
 
 .footer__text {
-    color: var(--white);
-    opacity: 0.945;
+    color: var(--grey-3);
     font-size: var(--font-size-s);
 }
 
@@ -58,10 +61,9 @@
 }
 
 .footer__socials svg {
-    fill: var(--white);
-    opacity: 0.8;
+    fill: var(--grey-3);
 }
 
 .footer__socials a:hover svg {
-    opacity: 1;
+    fill: var(--white);
 }
