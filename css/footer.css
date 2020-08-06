@@ -1,7 +1,7 @@
 .footer--push {
     background-color: #fff;
     position: relative;
-    z-index: 1;
+    z-index: 10;
     margin-bottom: var(--footer-height);
 }
 
@@ -13,7 +13,7 @@
     left: 0;
     right: 0;
     height: var(--footer-height);
-    z-index: 0;
+    z-index: 1;
     overflow: hidden;
 }
 
