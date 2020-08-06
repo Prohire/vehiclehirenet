@@ -19,10 +19,6 @@
     background: linear-gradient(to bottom, #f9f9f9, rgba(255,255,255,0));
 }
 
-.hero--model {
-    padding-bottom: 20vh;
-}
-
 @media screen and (max-width: 1024px) {
     .hero--main {
         min-height: 50vh;
