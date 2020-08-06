@@ -13,6 +13,7 @@
     left: 0;
     right: 0;
     height: var(--footer-height);
+    z-index: 0;
 }
 
 .footer .wrapper {
