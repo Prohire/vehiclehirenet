@@ -14,6 +14,7 @@
     right: 0;
     height: var(--footer-height);
     z-index: 0;
+    overflow: hidden;
 }
 
 .footer .wrapper {
@@ -30,7 +31,7 @@
 }
 
 .footer__image {
-    width: 80px;
+    width: 74px;
     max-width: 14.5vw;
 }
 
