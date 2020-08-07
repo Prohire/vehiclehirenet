@@ -35,7 +35,7 @@
                         <nav class="desktop__nav">
                             <ul class="nav__list">
                                 <li class="nav__item"><a class="site__btn site__btn--link" href="#about">About</a></li>
-                                <li class="nav__item"><a class="site__btn site__btn--link" href="#" id="contactBtn">Contact</a></li>
+                                <li class="nav__item"><a class="site__btn site__btn--link" href="javascript:void(0);" id="contactBtn">Contact</a></li>
                                 <li class="nav__item"><a class="site__btn site__btn--link" href="https://bookings.vehiclehirenetwork.com/login">Log in</a></li>
                                 <li class="nav__item"><a class="site__btn primary--colour" href="https://bookings.vehiclehirenetwork.com/register">Sign up</a></li>
                             </ul>
@@ -49,7 +49,7 @@
                             <ul class="nav__list__mobile">
                                 <li class="nav__item__mobile"><a class="primary--colour" href="https://bookings.vehiclehirenetwork.com/register">Sign up</a></li>
                                 <li class="nav__item__mobile"><a href="https://bookings.vehiclehirenetwork.com/login">Log in</a></li>
-                                <li class="nav__item__mobile"><a href="#" id="contactMobileBtn">Contact</a></li>
+                                <li class="nav__item__mobile"><a href="javascript:void(0);" id="contactMobileBtn">Contact</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -72,7 +72,7 @@
                             Whether you are moving home, delivering chilled food, going on holiday or need a company car, Vehicle Hire Network will find the vehicle you need in seconds.
                         </p>
                         <div class="grid__row">
-                            <a id="supplierBtn" class="btn--large site__btn site__btn--primary border--radius--l" href="#">Want to become a supplier?</a>
+                            <a id="supplierBtn" class="btn--large site__btn site__btn--primary border--radius--l" href="javascript:void(0);">Want to become a supplier?</a>
                         </div>
                     </div>
                     <div class="grid__col grid__col--justify--center hide--on--mobile">
@@ -256,16 +256,19 @@
             document.getElementById('supplierBtn').addEventListener("click", () => {
                 document.documentElement.classList.add('hide--overflow');
                 document.getElementById('supplier__form').classList.add('site__modal--active');
+                history.pushState(null, null, "supplier");
             });
 
             document.getElementById('contactBtn').addEventListener("click", () => {
                 document.documentElement.classList.add('hide--overflow');
                 document.getElementById('contact__form').classList.add('site__modal--active');
+                history.pushState(null, null, "contact");
             });
 
             document.getElementById('contactMobileBtn').addEventListener("click", () => {
                 document.documentElement.classList.add('hide--overflow');
                 document.getElementById('contact__form').classList.add('site__modal--active');
+                history.pushState(null, null, "contact");
             });
 
             document.querySelectorAll('.site__modal__close').forEach(item => {
@@ -277,6 +280,12 @@
             });
 
             document.addEventListener('keydown', event => {
+                document.documentElement.classList.remove('hide--overflow');
+                document.getElementById('supplier__form').classList.remove('site__modal--active');
+                document.getElementById('contact__form').classList.remove('site__modal--active');
+            });
+
+            window.addEventListener('popstate', (event) => {
                 document.documentElement.classList.remove('hide--overflow');
                 document.getElementById('supplier__form').classList.remove('site__modal--active');
                 document.getElementById('contact__form').classList.remove('site__modal--active');
