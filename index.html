@@ -142,6 +142,39 @@
                 </div>
             </div>
         </section>
+        <section class="hero hero--signup">
+            <div class="wrapper">
+                <div class="grid__row">
+                    <h3 class="signup__heading"><a href="https://bookings.vehiclehirenetwork.com/register">Sign up now</a> to access these additional features</h3>
+                </div>
+                <div class="grid grid--3--col">
+                    <div class="grid__col">
+                        <div class="grid__card">
+                            <div class="grid__card__icon"><img loading="lazy" src="img/search.svg" alt="VHN Search Icon" class="img--block"></div>
+                            <h4 class="grid__card__header">Model Search</h4>
+                            <div class="grid__card__description">Need a specific vehicle? Our powerful model search finds an exact make and model in seconds and we’ll only display a vehicle if it's available for you.</div>
+                        </div>
+                    </div>
+                    <div class="grid__col">
+                        <div class="grid__card">
+                            <div class="grid__card__icon"><img loading="lazy" src="img/account.svg" alt="VHN Account Icon" class="img--block"></div>
+                            <h4 class="grid__card__header">Account Access</h4>
+                            <div class="grid__card__description">Placing account business? Once logged in, users can apply for an account with a rental company or link an existing account to Vehicle Hire Network.</div>
+                        </div>
+                    </div>
+                    <div class="grid__col">
+                        <div class="grid__card">
+                            <div class="grid__card__icon"><img loading="lazy" src="img/documents.svg" alt="VHN Documents Icon" class="img--block"></div>
+                            <h4 class="grid__card__header">Bookings & Documents</h4>
+                            <div class="grid__card__description">Want to manage all your bookings and documents in one place? Sign up today to view and manage all bookings and documents from a single screen.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__row only--show--on--mobile">
+                    <a class="site__btn btn--large site__btn--secondary signup__button" href="https://bookings.vehiclehirenetwork.com/register">Sign up</a>
+                </div>
+            </div>
+        </section>
     </div>
     <footer class="footer">
         <div class="wrapper">
@@ -201,6 +234,14 @@
     </div>
     <script src="https://bookings.vehiclehirenetwork.com/wc/vhn-wc-es2015.js" type="module"></script>
     <script src="https://bookings.vehiclehirenetwork.com/wc/vhn-wc-es5.js" nomodule defer></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174900532-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-174900532-1');
+    </script>
     <script>
         window.onload = function() {
             document.getElementById('menuBtn').addEventListener("click", () => {

@@ -32,6 +32,11 @@
     color: var(--white);
 }
 
+.site__btn--secondary {
+    background: linear-gradient(270deg,rgba(var(--secondaryColourRGB),.85),var(--secondaryColour));
+    color: var(--white);
+}
+
 @media screen and (min-width: 821px) {
     .site__btn:hover {
         transform: scale(.95);
