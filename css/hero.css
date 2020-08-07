@@ -16,11 +16,11 @@
 }
 
 .hero--about {
-    background: linear-gradient(to bottom, #f9f9f9, rgba(255,255,255,0));
+    background: linear-gradient(to bottom, #f7f7f7, rgba(255,255,255,0));
 }
 
 .hero--signup {
-    background: linear-gradient(to bottom, #f9f9f9, rgba(255,255,255,0));
+    background: linear-gradient(to bottom, #f7f7f7, rgba(255,255,255,0));
     padding-top: 15vh;
     margin-top: 12.5vh;
 }
