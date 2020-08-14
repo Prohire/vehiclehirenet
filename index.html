@@ -231,11 +231,55 @@
             <button type="button" class="site__modal__close icon--only--btn">
                 <img loading="lazy" class="site__modal__close__icon" src="img/close.svg" alt="Close">
             </button>
-            <div class="site__modal__title"><span>Become a VHN Supplier</span></div>
+            <div class="site__modal__title"><span>Become a Vehicle Hire Network supplier</span></div>
             <div class="site__modal__content">
-                <div class="iframe__wrapper">
-                    <iframe src="https://www2.prohire.co.uk/l/857413/2020-03-30/99dz" frameborder="0" width="100%" scrolling="no"></iframe>
-                </div>
+                <form action="https://submit-form.com/9AIc27WVequDfrdpYtgYX" target="_self">
+                    <div class="row">
+                        <label for="Company__Name__Supplier" class="ui-label">Company Name</label>
+                        <input class="ui-inputtext" type="text" name="Company__Name__Supplier" id="Company__Name__Supplier" required>
+                    </div>
+                    <div class="row">
+                        <label for="Industry__Type__Supplier" class="ui-label">Industry Type</label>
+                        <select name="Industry__Type__Supplier" id="Industry__Type__Supplier" class="ui-inputtext">
+                            <option value="" selected="selected"></option>
+                            <option value="1">Ambulance Service</option>
+                            <option value="2">Armed Forces</option>
+                            <option value="3">Car & Truck Leasing & Contract Hire</option>
+                            <option value="4">Car & Truck Rental</option>
+                            <option value="5">Delivery Services</option>
+                            <option value="6">Food Distribution</option>
+                            <option value="7">Food Production</option>
+                            <option value="8">Heathcare</option>
+                            <option value="9">Housing Association</option>
+                            <option value="10">Local Authority</option>
+                            <option value="11">Medical Supplies</option>
+                            <option value="12">Police</option>
+                            <option value="13">Van & Truck Rental</option>
+                            <option value="14">Waste Disposal Services</option>
+                            <option value="15">Other</option>
+                        </select>
+                    </div>
+                    <div class="row">
+                        <label for="Full__Name__Supplier" class="ui-label">Full Name</label>
+                        <input class="ui-inputtext" type="text" name="Full__Name__Supplier" id="Full__Name__Supplier" required>
+                    </div>
+                    <div class="row">
+                        <label for="Email__Address__Supplier" class="ui-label">Email Address</label>
+                        <input class="ui-inputtext" type="email" name="Email__Address__Supplier" id="Email__Address__Supplier" required>
+                    </div>
+                    <div class="row">
+                        <label for="Contact__Number__Supplier" class="ui-label">Contact Number <span class="text--colour--light">(optional)</span></label>
+                        <input class="ui-inputtext" type="tel" name="Contact__Number__Supplier" id="Contact__Number__Supplier">
+                    </div>
+                    <div class="row">
+                        <label for="Message__Supplier" class="ui-label">Message <span class="text--colour--light">(optional)</span></label>
+                        <textarea class="ui-inputtext" name="Message__Supplier" id="Message__Supplier" rows="4"></textarea>
+                    </div>
+                    <div class="row">
+                        <p class="font--size--s">By clicking submit, you agree that we may process your information in accordance with our <a href="https://www.prohire.co.uk/legals/privacy-policy" target="_blank" rel="noopener">Privacy Notice</a>.</p>
+                    </div>
+                    <button type="submit" class="site__btn site__btn--primary">Send Message</button>
+                </form>
             </div>
         </div>
         <div id="contact__form" class="site__modal">
@@ -244,9 +288,28 @@
             </button>
             <div class="site__modal__title"><span>Contact Us</span></div>
             <div class="site__modal__content">
-                <div class="iframe__wrapper">
-                    <iframe src="https://www2.prohire.co.uk/l/857413/2020-08-05/lxxf" frameborder="0" width="100%" scrolling="no"></iframe>
-                </div>
+                <form action="https://submit-form.com/FxEx6DqIoKI8JdztIBBhY" target="_self">
+                    <div class="row">
+                        <label for="Full__Name" class="ui-label">Full Name</label>
+                        <input class="ui-inputtext" type="text" name="Full__Name" id="Full__Name" required>
+                    </div>
+                    <div class="row">
+                        <label for="Company__Name" class="ui-label">Company Name <span class="text--colour--light">(optional)</span></label>
+                        <input class="ui-inputtext" type="text" name="Company__Name" id="Company__Name">
+                    </div>
+                    <div class="row">
+                        <label for="Email__Address" class="ui-label">Email Address</label>
+                        <input class="ui-inputtext" type="email" name="Email__Address" id="Email__Address" required>
+                    </div>
+                    <div class="row">
+                        <label for="Message" class="ui-label">Message</label>
+                        <textarea class="ui-inputtext" name="Message" id="Message" rows="4" required></textarea>
+                    </div>
+                    <div class="row">
+                        <p class="font--size--s">By clicking submit, you agree that we may process your information in accordance with our <a href="https://www.prohire.co.uk/legals/privacy-policy" target="_blank" rel="noopener">Privacy Notice</a>.</p>
+                    </div>
+                    <button type="submit" class="site__btn site__btn--primary">Send Message</button>
+                </form>
             </div>
         </div>
     </div>
@@ -280,51 +343,51 @@
     <!-- End Facebook Pixel Code -->
 
     <script>
-        window.onload = function() {
-            document.getElementById('menuBtn').addEventListener("click", () => {
-                document.getElementById('menuBtn').classList.toggle('nav__menu__btn--active');
-                document.documentElement.classList.toggle('hide--overflow');
-                document.getElementById('mobileNav').classList.toggle('mobile__nav--active');
-            });
+        document.getElementById('menuBtn').addEventListener("click", () => {
+            document.getElementById('menuBtn').classList.toggle('nav__menu__btn--active');
+            document.documentElement.classList.toggle('hide--overflow');
+            document.getElementById('mobileNav').classList.toggle('mobile__nav--active');
+        });
 
-            document.getElementById('supplierBtn').addEventListener("click", () => {
-                document.documentElement.classList.add('hide--overflow');
-                document.getElementById('supplier__form').classList.add('site__modal--active');
-                history.pushState(null, null, "supplier");
-            });
+        document.getElementById('supplierBtn').addEventListener("click", () => {
+            document.documentElement.classList.add('hide--overflow');
+            document.getElementById('supplier__form').classList.add('site__modal--active');
+            history.pushState(null, null, "supplier");
+        });
 
-            document.getElementById('contactBtn').addEventListener("click", () => {
-                document.documentElement.classList.add('hide--overflow');
-                document.getElementById('contact__form').classList.add('site__modal--active');
-                history.pushState(null, null, "contact");
-            });
+        document.getElementById('contactBtn').addEventListener("click", () => {
+            document.documentElement.classList.add('hide--overflow');
+            document.getElementById('contact__form').classList.add('site__modal--active');
+            history.pushState(null, null, "contact");
+        });
 
-            document.getElementById('contactMobileBtn').addEventListener("click", () => {
-                document.documentElement.classList.add('hide--overflow');
-                document.getElementById('contact__form').classList.add('site__modal--active');
-                history.pushState(null, null, "contact");
-            });
+        document.getElementById('contactMobileBtn').addEventListener("click", () => {
+            document.documentElement.classList.add('hide--overflow');
+            document.getElementById('contact__form').classList.add('site__modal--active');
+            history.pushState(null, null, "contact");
+        });
 
-            document.querySelectorAll('.site__modal__close').forEach(item => {
-                item.addEventListener('click', event => {
-                    document.documentElement.classList.remove('hide--overflow');
-                    document.getElementById('supplier__form').classList.remove('site__modal--active');
-                    document.getElementById('contact__form').classList.remove('site__modal--active');
-                });
-            });
-
-            document.addEventListener('keydown', event => {
+        document.querySelectorAll('.site__modal__close').forEach(item => {
+            item.addEventListener('click', event => {
                 document.documentElement.classList.remove('hide--overflow');
                 document.getElementById('supplier__form').classList.remove('site__modal--active');
                 document.getElementById('contact__form').classList.remove('site__modal--active');
             });
+        });
 
-            window.addEventListener('popstate', (event) => {
+        document.addEventListener('keydown', event => {
+            if ( event.keyCode === 27 ) {
                 document.documentElement.classList.remove('hide--overflow');
                 document.getElementById('supplier__form').classList.remove('site__modal--active');
                 document.getElementById('contact__form').classList.remove('site__modal--active');
-            });
-        }
+            }
+        });
+
+        window.addEventListener('popstate', (event) => {
+            document.documentElement.classList.remove('hide--overflow');
+            document.getElementById('supplier__form').classList.remove('site__modal--active');
+            document.getElementById('contact__form').classList.remove('site__modal--active');
+        });
     </script>
 </body>
 

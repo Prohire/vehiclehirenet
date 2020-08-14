@@ -15,6 +15,7 @@
     will-change: transform, background-color;
     background-color: var(--white);
     text-decoration: none;
+    cursor: pointer;
 }
 
 .site__btn--link {

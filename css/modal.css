@@ -33,7 +33,7 @@
     height: 44px;
     border-radius: 100px;
     top: 8px;
-    right: 8px;
+    right: calc(var(--gutter) - 8px);
     will-change: transform, background-color;
     z-index: 10;
 }
@@ -73,7 +73,8 @@
     background: #fff;
     width: 100%;
     flex-grow: 1;
-    padding: 20px 22px;
+    padding: var(--spacing-l) var(--gutter);
+    padding-right: 60px;
     text-shadow: none;
     color: var(--text-colour);
     font-size: var(--font-size-l);
@@ -83,5 +84,16 @@
 }
 
 .site__modal__content {
-    padding-top: 58px;
+    padding: var(--gutter);
+    top: 58px;
+    -webkit-overflow-scrolling: touch;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    max-height: calc(100vh - 58px);
+    position: relative;
+}
+
+.site__modal__content form {
+    display: inline-block;
+    vertical-align: text-bottom;
 }
