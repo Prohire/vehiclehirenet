@@ -91,9 +91,11 @@
     overscroll-behavior: contain;
     max-height: calc(100vh - 58px);
     position: relative;
+    text-align: center;
 }
 
 .site__modal__content form {
     display: inline-block;
     vertical-align: text-bottom;
+    text-align: left;
 }
