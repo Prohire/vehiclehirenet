@@ -347,8 +347,11 @@
     <script>
         document.getElementById('menuBtn').addEventListener("click", () => {
             document.getElementById('menuBtn').classList.toggle('nav__menu__btn--active');
-            document.documentElement.classList.toggle('hide--overflow');
             document.getElementById('mobileNav').classList.toggle('mobile__nav--active');
+
+            if (document.documentElement.classList.contains('hide--overflow')) {
+                document.documentElement.classList.remove('hide--overflow');
+            }
         });
 
         document.getElementById('supplierBtn').addEventListener("click", () => {

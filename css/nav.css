@@ -58,6 +58,11 @@
         top: -2px;
         z-index: 505;
     }
+    .nav__menu__btn--active {
+        position: fixed;
+        top: var(--gutter);
+        right: var(--gutter);
+    }
     .nav__menu__btn img {
         width: 33px;
         height: 33px;
