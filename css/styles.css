@@ -63,5 +63,5 @@ body {
 }
 
 vhn-form {
-    background-color: transparent;
+    background-color: transparent !important;
 }
