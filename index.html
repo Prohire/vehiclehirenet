@@ -64,6 +64,8 @@
                                     </ul>
                                 </li>-->
                                 <li class="nav__item"><a class="site__btn site__btn--link" href="#about">About</a></li>
+                                <li class="nav__item"><a class="site__btn site__btn--link" href="#supplier">Supplier</a></li>
+                                <li class="nav__item"><a class="site__btn site__btn--link" href="#about">FAQ</a></li>
                                 <li class="nav__item"><a class="site__btn site__btn--link" href="javascript:void(0);" id="contactBtn">Contact</a></li>
                             </ul>
                             <ul class="nav__list">
@@ -272,7 +274,7 @@
                 </svg>
             </div>
         </section>
-        <section class="hero hero--supplier scrollOut">
+        <section class="hero hero--supplier scrollOut" id="supplier">
             <div class="wrapper">
                 <div class="grid grid--2--col grid--image--right">
                     <div class="grid__col grid__col--justify--center relative">
@@ -291,6 +293,16 @@
                 </div>
             </div>
         </section>
+    </div>
+    <section class="hero hero--faq scrollOut" id="faq">
+        <div class="wrapper">
+            <div class="grid__row">
+                <div class="hero__image__wrapper">
+                    <img loading="lazy" src="img/about.svg" alt="VHN What is VHN?" class="hero__image--right img--block">
+                </div>
+            </div>
+        </div>
+    </section>
     </div>
     <footer class="footer scrollOut">
         <div class="hero__shape hero__shape--top" data-negative="true">
@@ -478,7 +490,6 @@
         });
 
         document.getElementById('contactBtn').addEventListener("click", () => {
-            console.log("YO");
             document.documentElement.classList.add('hide--overflow');
             document.getElementById('contact__form').classList.add('site__modal--active');
             history.pushState(null, null, "contact");
@@ -565,11 +576,7 @@
         ScrollOut({
             targets: '.hero',
             once: true,
-            threshold: 0.25,
-            cssProps: {
-                visibleY: true,
-                viewportY: true
-            }
+            threshold: 0.25
         })
     </script>
 </body>

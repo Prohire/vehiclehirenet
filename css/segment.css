@@ -36,7 +36,7 @@
     position: relative;
     display: block;
     text-align: center;
-    padding: 3px 6vmin;
+    padding: 6px 6vmin;
     background: transparent;
     color: var(--text-colour);
     font-size: var(--font-size-l);
@@ -103,8 +103,7 @@
 .segment .selection {
     background-color: var(--white);
     box-shadow: var(--box-shadow);
-    height: var(--button-height);
-    line-height: var(--button-height);
+    min-height: var(--button-height);
     font-weight: var(--font-weight-bold);
     border-radius: 100px;
     grid-column: 1;
@@ -115,6 +114,7 @@
 }
 
 .segment .option label span {
+    line-height: 1;
     display: block;
     position: relative;
     z-index: 2;

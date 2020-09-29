@@ -62,8 +62,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('https://vhn.anglestudios.dev/resources/img/testimonial-bg.png') no-repeat center;
-    background-attachment: fixed;
+    background: url('../img/global.png') no-repeat center;
     background-size: cover;
 }
 
