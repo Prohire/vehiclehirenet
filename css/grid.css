@@ -44,7 +44,7 @@
 
 .grid__card {
     background-color: var(--white);
-    box-shadow: var(--box-shadow-xl);
+    box-shadow: var(--box-shadow-l);
     padding: calc(var(--gutter) + 10px) var(--gutter) var(--gutter);
     border-radius: var(--border-radius-l);
     min-height: 100%;

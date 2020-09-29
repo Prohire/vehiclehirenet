@@ -9,13 +9,18 @@
     justify-content: center;
     box-shadow: var(--box-shadow);
     padding: 0 var(--spacing-xxl);
-    border-radius: 100px;
+    border-radius: var(--border-radius-l);
     white-space: nowrap;
     transition: transform .25s ease, background-color .15s ease;
     will-change: transform, background-color;
     background-color: var(--white);
     text-decoration: none;
     cursor: pointer;
+    white-space: pre;
+}
+
+.site__btn + .site__btn {
+    margin-left: var(--spacing-xl);
 }
 
 .site__btn--link {

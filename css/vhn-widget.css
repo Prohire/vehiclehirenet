@@ -1,0 +1,11 @@
+@media only screen and (min-width: 1024px) {
+    .search__button .btn__content {
+        padding: 12px !important;
+    }
+    .search__button .btn__icon {
+        margin: 0 !important;
+    }
+    .search__button .btn__label {
+        display: none;
+    }
+}

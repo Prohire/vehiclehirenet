@@ -39,7 +39,7 @@
                 <div class="header__wrapper">
                     <h1 class="logo">
                         <a href="/">
-                            <img loading="lazy" src="img/logo.png" srcset="img/logo@2x.png 2x" alt="Vehicle Hire Network" class="logo__image img--block"/>
+                            <object type="image/svg+xml" data="img/logo.svg" class="logo__image" alt="Vehicle Hire Network"></object>
                         </a>
                     </h1>
                     <div class="nav__wrapper">
@@ -49,10 +49,26 @@
                         </button>
                         <nav class="desktop__nav">
                             <ul class="nav__list">
+                                <!--<li class="nav__item">
+                                    <a class="site__btn site__btn--link" href="#">Find a vehicle</a>
+                                    <ul class="sub__nav__list">
+                                        <li class="nav__item">
+                                            <a class="site__btn site__btn--link" href="#personas"><span class="font--weight">for</span> Business owner</a>
+                                        </li>
+                                        <li class="nav__item">
+                                            <a class="site__btn site__btn--link" href="#personas"><span class="font--weight">for</span> Broker</a>
+                                        </li>
+                                        <li class="nav__item">
+                                            <a class="site__btn site__btn--link" href="#personas"><span class="font--weight">for</span> Rental company</a>
+                                        </li>
+                                    </ul>
+                                </li>-->
                                 <li class="nav__item"><a class="site__btn site__btn--link" href="#about">About</a></li>
                                 <li class="nav__item"><a class="site__btn site__btn--link" href="javascript:void(0);" id="contactBtn">Contact</a></li>
-                                <li class="nav__item"><a class="site__btn site__btn--link" href="https://bookings.vehiclehirenetwork.com/login">Log in</a></li>
-                                <li class="nav__item"><a class="site__btn primary--colour" href="https://bookings.vehiclehirenetwork.com/signup">Sign up</a></li>
+                            </ul>
+                            <ul class="nav__list">
+                                <li class="nav__item"><a class="site__btn site__btn--link primary--colour" href="https://bookings.vehiclehirenetwork.com/login">Log in</a></li>
+                                <li class="nav__item nav__item--signup"><a class="site__btn site__btn--primary" href="https://bookings.vehiclehirenetwork.com/signup">Sign up</a></li>
                             </ul>
                         </nav>
                         <nav id="mobileNav" class="mobile__nav">
@@ -81,13 +97,21 @@
                 <div class="grid grid--2--col">
                     <div class="grid__col grid__col--justify--center">
                         <h2 class="grid__row hero__heading--main">
-                            <span class="primary--colour">Network</span> of local independent rental companies across the U<span class="letter--spacing">K</span>.
+                            <span>Find the</span>
+                            <span class="primary--colour rotate__word">
+                                <p><span>vehicle</span></p>
+                                <p><span>transit</span></p>
+                                <p><span>luton</span></p>
+                                <p><span>tipper</span></p>
+                                <p><span>minibus</span></p>
+                            </span>
+                            <span>you need in seconds</span>
                         </h2>
                         <p class="grid__row hero__description--main">
-                            Whether you are moving home, delivering chilled food, going on holiday or need a company car, Vehicle Hire Network will find the vehicle you need in seconds.
+                            Whether you are looking for a <span class="text--highlight--small">company car</span>, <span class="text--highlight--small text--highlight--secondary">delivering chilled food</span> or <span class="text--highlight--small text--highlight--tertiary">moving home</span> we will find the right vehicle, in the right place at the right time.
                         </p>
                         <div class="grid__row">
-                            <a id="supplierBtn" class="btn--large site__btn site__btn--primary border--radius--l" href="javascript:void(0);">Want to become a supplier?</a>
+                            <a class="btn--large site__btn site__btn--primary" href="https://bookings.vehiclehirenetwork.com/signup">Sign up now</a>
                         </div>
                     </div>
                     <div class="grid__col grid__col--justify--center hide--on--mobile">
@@ -96,7 +120,12 @@
                 </div>
             </div>
         </section>
-        <section class="hero hero--about" id="about">
+        <section class="hero hero--about scrollOut" id="about">
+            <div class="hero__shape hero__shape--top" data-negative="true">
+                <svg class="hero__shape__svg" width="100%" height="96px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none">
+                    <path class="hero__shape__path" d="M0,0 C16.6666667,66 33.3333333,99 50,99 C66.6666667,99 83.3333333,66 100,0 L100,100 L0,100 L0,0 Z"></path>
+                </svg>
+            </div>
             <div class="wrapper">
                 <div class="grid grid--2--col">
                     <div class="grid__col grid__col--justify--center">
@@ -113,7 +142,7 @@
                 </div>
             </div>
         </section>
-        <section class="hero hero--local">
+        <section class="hero hero--local scrollOut">
             <div class="wrapper">
                 <div class="grid grid--2--col grid--image--right">
                     <div class="grid__col grid__col--justify--center relative">
@@ -129,7 +158,7 @@
                 </div>
             </div>
         </section>
-        <section class="hero hero--find">
+        <section class="hero hero--find scrollOut">
             <div class="wrapper">
                 <div class="grid grid--2--col">
                     <div class="grid__col grid__col--justify--center">
@@ -145,7 +174,7 @@
                 </div>
             </div>
         </section>
-        <section class="hero hero--model">
+        <section class="hero hero--model scrollOut">
             <div class="wrapper">
                 <div class="grid grid--2--col grid--image--right">
                     <div class="grid__col grid__col--justify--center relative">
@@ -160,10 +189,33 @@
                 </div>
             </div>
         </section>
-        <section class="hero hero--signup">
+        <section class="hero hero--personas scrollOut" id="personas">
+            <div class="hero__shape hero__shape--top" data-negative="true">
+                <svg class="hero__shape__svg" width="100%" height="96px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none">
+                    <path class="hero__shape__path" d="M0,0 C16.6666667,66 33.3333333,99 50,99 C66.6666667,99 83.3333333,66 100,0 L100,100 L0,100 L0,0 Z"></path>
+                </svg>
+            </div>
             <div class="wrapper">
                 <div class="grid__row">
-                    <h3 class="signup__heading"><a href="https://bookings.vehiclehirenetwork.com/signup">Sign up now</a> to access these additional features</h3>
+                    <h3 class="hero__heading"><span class="text--highlight">Powerful Search</span>, <span class="text--highlight text--highlight--secondary">Live Availability</span>, <span class="text--highlight text--highlight--tertiary">Instant Bookings</span> and more<span class="letter--spacing">.</span><span class="letter--spacing">.</span><span class="letter--spacing">.</span></h3>
+                    <p class="hero__description">Click below to find out how we can help your business.</p>
+                </div>
+                <div class="grid__row">
+                    <div class="segment">
+                        <span class="selection"></span>
+                        <div class="option">
+                            <input type="radio" id="Business" name="industry" value="Business" checked>
+                            <label for="Business"><span>Business owner</span></label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="Broker" name="industry" value="Broker">
+                            <label for="Broker"><span>Broker</span></label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="Rental" name="industry" value="Rental">
+                            <label for="Rental"><span>Rental company</span></label>
+                        </div>
+                    </div>
                 </div>
                 <div class="grid grid--3--col">
                     <div class="grid__col">
@@ -188,13 +240,63 @@
                         </div>
                     </div>
                 </div>
-                <div class="grid__row only--show--on--mobile">
-                    <a class="site__btn btn--large site__btn--secondary signup__button" href="https://bookings.vehiclehirenetwork.com/signup">Sign up</a>
+                <div class="grid__row">
+                    <a class="site__btn btn--large site__btn--primary signup__button" href="https://bookings.vehiclehirenetwork.com/signup">
+                        <span>Try for free</span>
+                    </a>
                 </div>
             </div>
         </section>
+        <section class="hero hero--testimonial scrollOut">
+            <div class="hero__shape hero__shape--top" data-negative="true">
+                <svg class="hero__shape__svg" width="100%" height="96px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none">
+                    <path class="hero__shape__path" d="M0,0 C16.6666667,66 33.3333333,99 50,99 C66.6666667,99 83.3333333,66 100,0 L100,100 L0,100 L0,0 Z"></path>
+                </svg>
+            </div>
+            <div class="wrapper">
+                <h1 class="hero__heading">What our clients have to say<span class="letter--spacing">.</span><span class="letter--spacing">.</span><span class="letter--spacing">.</span></h1>
+                <blockquote class="testimonial__quote hero__description">
+                    <p class="testimonial__text grid__row">Global Go! are a proud advocate and user of Vehicle Hire Network. It opens up our brand to the entire country, enabling the general public to access our range of products and services locally. It’s an excellent product for consumers and an excellent sales aid for rental companies.</p>
+                    <footer class="testimonial__meta">
+                        <div>
+                            <cite class="testimonial__author">Gareth Jones</cite>
+                            <div class="testimonial__position">Group CEO, Global Go!</div>
+                        </div>
+                    </footer>
+                </blockquote>
+            </div>
+        </section>
     </div>
-    <footer class="footer">
+    <section class="hero hero--supplier scrollOut">
+        <div class="hero__shape hero__shape--top" data-negative="true">
+            <svg class="hero__shape__svg" width="100%" height="96px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none">
+                <path class="hero__shape__path hero__shape__path--secondary" d="M0,0 C16.6666667,66 33.3333333,99 50,99 C66.6666667,99 83.3333333,66 100,0 L100,100 L0,100 L0,0 Z"></path>
+            </svg>
+        </div>
+        <div class="wrapper">
+            <div class="grid grid--2--col grid--image--right">
+                <div class="grid__col grid__col--justify--center relative">
+                    <h3 class="hero__heading secondary--colour">Become a supplier<span class="letter--spacing">.</span><span class="letter--spacing">.</span><span class="letter--spacing">.</span></h3>
+                    <p class="hero__description">Vehicle Hire Network creates opportunities for rental operators that were previously unavailable.</p>
+                    <p class="hero__description">Do you run an independent rental company and want to be seen by a larger audience? Increase your online bookings today by joining Vehicle Hire Network.</p>
+                    <div class="grid__row">
+                        <a class="btn--large site__btn site__btn--secondary" href="javascript:void(0);" id="supplierBtn">Join us today</a>
+                    </div>
+                </div>
+                <div class="grid__col grid__col--justify--center">
+                    <div class="hero__image__wrapper">
+                        <img loading="lazy" src="img/about.svg" alt="VHN What is VHN?" class="hero__image--right img--block">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer scrollOut">
+        <div class="hero__shape hero__shape--top" data-negative="true">
+            <svg class="hero__shape__svg" width="100%" height="96px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none">
+                <path class="hero__shape__path" d="M0,0 C16.6666667,66 33.3333333,99 50,99 C66.6666667,99 83.3333333,66 100,0 L100,100 L0,100 L0,0 Z"></path>
+            </svg>
+        </div>
         <div class="wrapper">
             <div class="footer__content">
                 <img loading="lazy" src="logo.svg" alt="Footer VHN Logo" class="footer__image img--block">
@@ -375,6 +477,7 @@
         });
 
         document.getElementById('contactBtn').addEventListener("click", () => {
+            console.log("YO");
             document.documentElement.classList.add('hide--overflow');
             document.getElementById('contact__form').classList.add('site__modal--active');
             history.pushState(null, null, "contact");
@@ -407,6 +510,66 @@
             document.getElementById('supplier__form').classList.remove('site__modal--active');
             document.getElementById('contact__form').classList.remove('site__modal--active');
         });
+    </script>
+    <script>
+        // Constants
+        const SEGMENTED_CONTROL_BASE_SELECTOR = ".segment";
+        const SEGMENTED_CONTROL_INDIVIDUAL_SEGMENT_SELECTOR = ".segment .option input";
+        const SEGMENTED_CONTROL_BACKGROUND_PILL_SELECTOR = ".segment .selection";
+
+
+        // Main
+        document.addEventListener("DOMContentLoaded", setup);
+
+        // Body functions
+        function setup() {
+            forEachElement(SEGMENTED_CONTROL_BASE_SELECTOR, elem => {
+                elem.addEventListener("change", updatePillPosition);
+            })
+            window.addEventListener("resize", updatePillPosition); // Prevent pill from detaching from element when window resized. Becuase this is rare I haven't bothered with throttling the event
+        }
+
+        function updatePillPosition() {
+            forEachElement(SEGMENTED_CONTROL_INDIVIDUAL_SEGMENT_SELECTOR, (elem, index) => {
+                if (elem.checked) moveBackgroundPillToElement(elem, index);
+            })
+        }
+
+        function moveBackgroundPillToElement(elem, index) {
+            document.querySelector(SEGMENTED_CONTROL_BACKGROUND_PILL_SELECTOR).style.transform = "translateX(" + (elem.offsetWidth * index) + "px)";
+        }
+
+        // Helper functions
+        function forEachElement(className, fn) {
+            Array.from(document.querySelectorAll(className)).forEach(fn);
+        }
+    </script>
+
+    <script>
+        var ScrollOut=function(){"use strict"
+            function S(e,t,n){return e<t?t:n<e?n:e}function T(e){return+(0<e)-+(e<0)}var q,t={}
+            function n(e){return"-"+e[0].toLowerCase()}function d(e){return t[e]||(t[e]=e.replace(/([A-Z])/g,n))}function v(e,t){return e&&0!==e.length?e.nodeName?[e]:[].slice.call(e[0].nodeName?e:(t||document.documentElement).querySelectorAll(e)):[]}function h(e,t){for(var n in t)n.indexOf("_")&&e.setAttribute("data-"+d(n),t[n])}var z=[]
+            function e(){q=0,z.slice().forEach(function(e){return e()}),F()}function F(){!q&&z.length&&(q=requestAnimationFrame(e))}function N(e,t,n,r){return"function"==typeof e?e(t,n,r):e}function m(){}return function(L){var i,P,_,H,o=(L=L||{}).onChange||m,l=L.onHidden||m,c=L.onShown||m,s=L.onScroll||m,f=L.cssProps?(i=L.cssProps,function(e,t){for(var n in t)n.indexOf("_")&&(!0===i||i[n])&&e.style.setProperty("--"+d(n),(r=t[n],Math.round(1e4*r)/1e4))
+                var r}):m,e=L.scrollingElement,A=e?v(e)[0]:window,W=e?v(e)[0]:document.documentElement,x=!1,O={},y=[]
+                function t(){y=v(L.targets||"[data-scroll]",v(L.scope||W)[0]).map(function(e){return{element:e}})}function n(){var e=W.clientWidth,t=W.clientHeight,n=T(-P+(P=W.scrollLeft||window.pageXOffset)),r=T(-_+(_=W.scrollTop||window.pageYOffset)),i=W.scrollLeft/(W.scrollWidth-e||1),o=W.scrollTop/(W.scrollHeight-t||1)
+                    x=x||O.scrollDirX!==n||O.scrollDirY!==r||O.scrollPercentX!==i||O.scrollPercentY!==o,O.scrollDirX=n,O.scrollDirY=r,O.scrollPercentX=i,O.scrollPercentY=o
+                    for(var l,c=!1,s=0;s<y.length;s++){for(var f=y[s],u=f.element,a=u,d=0,v=0;d+=a.offsetLeft,v+=a.offsetTop,(a=a.offsetParent)&&a!==A;);var h=u.clientHeight||u.offsetHeight||0,m=u.clientWidth||u.offsetWidth||0,g=(S(d+m,P,P+e)-S(d,P,P+e))/m,p=(S(v+h,_,_+t)-S(v,_,_+t))/h,w=1===g?0:T(d-P),X=1===p?0:T(v-_),Y=S((P-(m/2+d-e/2))/(e/2),-1,1),b=S((_-(h/2+v-t/2))/(t/2),-1,1),D=void 0
+                        D=L.offset?N(L.offset,u,f,W)>_?0:1:(N(L.threshold,u,f,W)||0)<g*p?1:0
+                        var E=f.visible!==D;(f._changed||E||f.visibleX!==g||f.visibleY!==p||f.index!==s||f.elementHeight!==h||f.elementWidth!==m||f.offsetX!==d||f.offsetY!==v||f.intersectX!=f.intersectX||f.intersectY!=f.intersectY||f.viewportX!==Y||f.viewportY!==b)&&(c=!0,f._changed=!0,f._visibleChanged=E,f.visible=D,f.elementHeight=h,f.elementWidth=m,f.index=s,f.offsetX=d,f.offsetY=v,f.visibleX=g,f.visibleY=p,f.intersectX=w,f.intersectY=X,f.viewportX=Y,f.viewportY=b,f.visible=D)}H||!x&&!c||(l=C,z.push(l),F(),H=function(){!(z=z.filter(function(e){return e!==l})).length&&q&&(cancelAnimationFrame(q),q=0)})}function C(){u(),x&&(x=!1,h(W,{scrollDirX:O.scrollDirX,scrollDirY:O.scrollDirY}),f(W,O),s(W,O,y))
+                    for(var e=y.length-1;-1<e;e--){var t=y[e],n=t.element,r=t.visible,i=n.hasAttribute("scrollout-once")||!1
+                        t._changed&&(t._changed=!1,f(n,t)),t._visibleChanged&&(h(n,{scroll:r?"in":"out"}),o(n,t,W),(r?c:l)(n,t,W)),r&&(L.once||i)&&y.splice(e,1)}}function u(){H&&(H(),H=void 0)}t(),n(),C()
+                var r=0,a=function(){r=r||setTimeout(function(){r=0,n()},0)}
+                return window.addEventListener("resize",a),A.addEventListener("scroll",a),{index:t,update:n,teardown:function(){u(),window.removeEventListener("resize",a),A.removeEventListener("scroll",a)}}}}()
+
+        ScrollOut({
+            targets: '.hero',
+            once: true,
+            threshold: 0.25,
+            cssProps: {
+                visibleY: true,
+                viewportY: true
+            }
+        })
     </script>
 </body>
 

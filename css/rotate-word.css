@@ -1,0 +1,85 @@
+.rotate__word {
+    position: relative;
+    overflow: hidden;
+    margin-left: 8px;
+    height: 57px;
+}
+
+.rotate__word p {
+    display: block;
+    position: relative;
+    line-height: 1.25;
+    height: 57px;
+    animation: animateWords 12.5s ease infinite;
+    will-change: filter, transform, blur;
+    width: 141px;
+}
+
+.rotate__word span {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@keyframes animateWords {
+    0%, 16.5% {
+        filter: blur(0);
+        transform: translateY(0);
+        width: 141px;
+    }
+    18.5% {
+        filter: blur(1px);
+    }
+    19% {
+        filter: blur(0px);
+    }
+    20%, 36.5% {
+        filter: blur(0);
+        transform: translateY(-57px);
+        width: 137px;
+    }
+    38.5% {
+        filter: blur(1px);
+    }
+    39% {
+        filter: blur(0px);
+    }
+    40%, 56.5% {
+        filter: blur(0);
+        transform: translateY(calc(-57px * 2));
+        width: 106px;
+    }
+    58.5% {
+        filter: blur(1px);
+    }
+    59% {
+        filter: blur(0px);
+    }
+    60%, 76.5% {
+        filter: blur(0);
+        transform: translateY(calc(-57px * 3));
+        width: 122px;
+    }
+    78.5% {
+        filter: blur(1px);
+    }
+    79% {
+        filter: blur(0px);
+    }
+    80%, 96.5% {
+        filter: blur(0);
+        transform: translateY(calc(-57px * 4));
+        width: 170px;
+    }
+    98.5% {
+        filter: blur(1px);
+    }
+    99% {
+        filter: blur(0px);
+    }
+    100% {
+        filter: blur(0);
+        transform: translateY(0);
+        width: 141px;
+    }
+}

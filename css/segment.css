@@ -1,0 +1,132 @@
+.segment {
+    background: var(--grey-lightest);
+    border-radius: 100px;
+    margin: 0;
+    margin-bottom: calc(var(--gutter) + 5px);
+    padding: var(--spacing-xs);
+    border: none;
+    outline: none;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+.segment .option {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.segment .option:hover input:not(:checked) + label span, .segment .option:active input:not(:checked) + label span, .segment .option:focus input:not(:checked) + label span {
+    color: var(--text-colour-light);
+}
+
+.segment .option:active input:not(:checked) + label span {
+    transform: scale(.95);
+}
+
+.segment .option label {
+    position: relative;
+    display: block;
+    text-align: center;
+    padding: 3px 6vmin;
+    background: transparent;
+    color: var(--text-colour);
+    font-size: var(--font-size-l);
+    font-weight: var(--font-weight-bold);
+    width: 100%;
+    cursor: pointer;
+}
+
+.segment .option label::before, .segment .option label::after {
+    content: '';
+    width: 1px;
+    background: var(--border-colour-light);
+    position: absolute;
+    top: 14%;
+    bottom: 14%;
+    border-radius: 100px;
+    will-change: background;
+    transition: background var(--transition-l);
+}
+
+.segment .option label::before {
+    left: 0;
+    transform: translateX(-.5px);
+}
+
+.segment .option label::after {
+    right: 0;
+    transform: translateX(.5px);
+}
+
+.segment .option:first-of-type {
+    grid-column: 1;
+    grid-row: 1;
+    box-shadow: none;
+}
+
+.segment .option:first-of-type label::before {
+    opacity: 0;
+}
+
+.segment .option:last-of-type label::after {
+    opacity: 0;
+}
+
+.segment .option input {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+    opacity: 0;
+}
+
+.segment .selection {
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    height: var(--button-height);
+    line-height: var(--button-height);
+    font-weight: var(--font-weight-bold);
+    border-radius: 100px;
+    grid-column: 1;
+    grid-row: 1;
+    z-index: 2;
+    will-change: transform;
+    transition: transform var(--transition-l);
+}
+
+.segment .option label span {
+    display: block;
+    position: relative;
+    z-index: 2;
+    transition: all var(--transition-l);
+    will-change: transform;
+}
+
+.segment .option input:checked+label::before, .segment .option input:checked+label::after {
+    background: var(--grey-lightest);
+    z-index: 1;
+}
+
+.segment .option input:checked+label {
+    color: var(--primaryColour);
+}
