@@ -10,6 +10,11 @@
 @import "hero.css";
 @import "modal.css";
 @import "inputs.css";
+@import "segment.css";
+@import "details.css";
+@import "rotate-word.css";
+@import "scrollOut.css";
+@import "vhn-widget.css";
 @import "footer.css";
 
 .hide--overflow {
@@ -51,7 +56,7 @@ body {
     margin-top: var(--spacing);
     min-height: 76px;
     position: sticky;
-    top: 0;
+    top: var(--spacing);
     z-index: 1;
 }
 

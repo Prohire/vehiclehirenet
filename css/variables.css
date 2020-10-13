@@ -37,6 +37,7 @@
 
     --transition: 150ms ease;
     --transition-l: 250ms ease;
+    --transition-xl: 500ms ease;
 
     --spacing-xxxxs: 1px;
     --spacing-xxxs: 2px;

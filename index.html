@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="robots" content="noindex" />
     <meta charset="UTF-8">
     <meta http-equiv="last-modified" content="Fri, 07 Aug 2020 10:22:46 GMT"/>
     <meta http-equiv="Cache-control" content="public">
@@ -33,168 +34,422 @@
 </head>
 
 <body>
-    <div class="footer--push">
-        <header class="header">
-            <div class="wrapper">
-                <div class="header__wrapper">
-                    <h1 class="logo">
-                        <a href="/">
-                            <img loading="lazy" src="img/logo.png" srcset="img/logo@2x.png 2x" alt="Vehicle Hire Network" class="logo__image img--block"/>
+    <header class="header">
+        <div class="wrapper">
+            <div class="header__wrapper">
+                <h1 class="logo">
+                    <a href="/">
+                        <object type="image/svg+xml" data="img/logo.svg" class="logo__image" alt="Vehicle Hire Network"></object>
+                    </a>
+                </h1>
+                <div class="nav__wrapper">
+                    <button id="menuBtn" type="button" class="nav__menu__btn">
+                        <img loading="lazy" class="nav__menu__btn--close" src="img/close.svg" alt="Open menu">
+                        <img loading="lazy" class="nav__menu__btn--open" src="img/menu.svg" alt="Close menu">
+                    </button>
+                    <nav class="desktop__nav">
+                        <ul class="nav__list">
+                            <li class="nav__item"><a class="site__btn site__btn--link" href="#about">About</a></li>
+                            <li class="nav__item"><a class="site__btn site__btn--link hide--on--tablet" href="#supplier">Become a Supplier</a></li>
+                            <li class="nav__item"><a class="site__btn site__btn--link" href="javascript:void(0);" id="contactBtn">Contact</a></li>
+                        </ul>
+                        <ul class="nav__list">
+                            <li class="nav__item"><a class="site__btn site__btn--link" href="https://bookings.vehiclehirenetwork.com/login">Log in</a></li>
+                            <li class="nav__item nav__item--signup"><a class="site__btn site__btn--primary" href="https://bookings.vehiclehirenetwork.com/signup">Sign up</a></li>
+                        </ul>
+                    </nav>
+                    <nav id="mobileNav" class="mobile__nav">
+                        <div class="logo">
+                            <a href="/">
+                                <img loading="lazy" src="logo.svg"  alt="Vehicle Hire Network" class="logo__image__mobile img--block"/>
+                            </a>
+                        </div>
+                        <ul class="nav__list__mobile">
+                            <li class="nav__item__mobile"><a class="primary--colour" href="https://bookings.vehiclehirenetwork.com/signup">Sign up</a></li>
+                            <li class="nav__item__mobile"><a href="https://bookings.vehiclehirenetwork.com/login">Log in</a></li>
+                            <li class="nav__item__mobile"><a href="javascript:void(0);" id="contactMobileBtn">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="widget__wrapper">
+        <div class="wrapper">
+            <vhn-form hire-company-id="PROHIRE" api-url="https://bookings.vehiclehirenetwork.com/api/"></vhn-form>
+        </div>
+    </div>
+    <section class="hero hero--main">
+        <div class="hero__bg"></div>
+        <div class="wrapper">
+            <div class="grid grid--2--col">
+                <div class="grid__col grid__col--justify--center">
+                    <h2 class="grid__row hero__heading--main">
+                        <span>Find the</span>
+                        <span class="primary--colour rotate__word">
+                           <p><span>transit</span></p>
+                            <p><span>lorry</span></p>
+                            <p><span>van</span></p>
+                            <p><span>tipper</span></p>
+                            <p><span>minibus</span></p>
+                        </span>
+                        <span><br class="only--show--on--mobile"> you<br class="only--show--on--tablet"> need in seconds</span>
+                    </h2>
+                    <p class="grid__row hero__description--main">
+                        Whether you are looking for a <span class="text--highlight--small">company car</span>, <span class="text--highlight--small text--highlight--secondary">delivering chilled food</span> or <span class="text--highlight--small text--highlight--tertiary">moving home</span>, we will find you the right vehicle, in the right place at the right time.
+                    </p>
+                    <div class="grid__row">
+                        <a class="btn--large site__btn site__btn--primary" href="https://bookings.vehiclehirenetwork.com/start">Start your search</a>
+                        <a class="btn--large site__btn site__btn--link hide--on--mobile" href="#works">
+                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 8px;">
+                                <circle cx="8.5" cy="8.5" r="8.5" fill="black"></circle>
+                                <path d="M12.3137 8.65674L6.65685 4.99988V12.3136L12.3137 8.65674Z" fill="white"></path>
+                            </svg>
+                            <span>See how it works</span>
                         </a>
-                    </h1>
-                    <div class="nav__wrapper">
-                        <button id="menuBtn" type="button" class="nav__menu__btn">
-                            <img loading="lazy" class="nav__menu__btn--close" src="img/close.svg" alt="Open menu">
-                            <img loading="lazy" class="nav__menu__btn--open" src="img/menu.svg" alt="Close menu">
-                        </button>
-                        <nav class="desktop__nav">
-                            <ul class="nav__list">
-                                <li class="nav__item"><a class="site__btn site__btn--link" href="#about">About</a></li>
-                                <li class="nav__item"><a class="site__btn site__btn--link" href="javascript:void(0);" id="contactBtn">Contact</a></li>
-                                <li class="nav__item"><a class="site__btn site__btn--link" href="https://bookings.vehiclehirenetwork.com/login">Log in</a></li>
-                                <li class="nav__item"><a class="site__btn primary--colour" href="https://bookings.vehiclehirenetwork.com/signup">Sign up</a></li>
-                            </ul>
-                        </nav>
-                        <nav id="mobileNav" class="mobile__nav">
-                            <div class="logo">
-                                <a href="/">
-                                    <img loading="lazy" src="logo.svg"  alt="Vehicle Hire Network" class="logo__image__mobile img--block"/>
-                                </a>
+                    </div>
+                </div>
+                <div class="grid__col grid__col--justify--center hide--on--mobile">
+                    <img loading="lazy" src="img/vehicles.jpg" alt="VHN Vehicles" class="hero__image--main img--block">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="hero hero--works scrollOut" id="works">
+        <div class="hero__shape hero__shape--top" data-negative="true">
+            <svg class="hero__shape__svg" width="100%" height="96px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none">
+                <path class="hero__shape__path" d="M0,0 C16.6666667,66 33.3333333,99 50,99 C66.6666667,99 83.3333333,66 100,0 L100,100 L0,100 L0,0 Z"></path>
+            </svg>
+        </div>
+        <div class="wrapper">
+            <div class="grid__row--medium">
+                <div class="hero__heading__small">Video</div>
+                <h3 class="hero__heading primary--colour">How it works</h3>
+                <p class="hero__description">Vehicle Hire Network is the quickest and easiest way to locate and hire vehicles when you need them most. Simply enter your location, chosen dates and vehicle type and we’ll search our network of independent rental suppliers for a vehicle near you.</p>
+                <p class="hero__description">With over 75,000 vehicles including vans, cars, motorhomes and minibuses, we’re sure to have what you need. </p>
+            </div>
+            <div class="grid__row">
+                <div class="video--frame">
+                    <div class="responsive--iframe">
+                        <div id="youtubeEmbed" data-video-id="BvaTPTpRVXI" class="hide--on--mobile"></div>
+                        <img loading="lazy" class="only--show--on--mobile" src="img/search.gif" alt="How it works video" style="min-width: 100%;"/>
+                    </div>
+                </div>
+            </div>
+            <div class="grid__row text--align--center">
+                <a class="btn--large site__btn site__btn--primary" href="https://bookings.vehiclehirenetwork.com/start">Find a vehicle</a>
+            </div>
+        </div>
+    </section>
+    <section class="hero hero--about scrollOut" id="about">
+        <div class="hero__shape hero__shape--top" data-negative="true">
+            <svg class="hero__shape__svg" width="100%" height="96px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none">
+                <path class="hero__shape__path" d="M0,0 C16.6666667,66 33.3333333,99 50,99 C66.6666667,99 83.3333333,66 100,0 L100,100 L0,100 L0,0 Z"></path>
+            </svg>
+        </div>
+        <div class="wrapper">
+            <div class="grid grid--2--col">
+                <div class="grid__col grid__col--justify--center">
+                    <div class="hero__image__wrapper">
+                        <img loading="lazy" src="img/about.svg" alt="VHN What is VHN?" class="hero__image--center img--block">
+                    </div>
+                </div>
+                <div class="grid__col grid__col--justify--center">
+                    <div class="hero__heading__small">About Us</div>
+                    <h3 class="hero__heading secondary--colour">What is Vehicle Hire Network?</h3>
+                    <p class="hero__description">Vehicle Hire Network is a connected community of over 400 independent rental companies across England, Northern Ireland, Scotland and Wales.</p>
+                    <p class="hero__description">With a collective fleet of over 75,000 vehicles including cars, vans, trucks, minibuses and campers, we’re sure to have the vehicle you need.</p>
+                    <p class="hero__description">Whether you are moving home, delivering chilled food, going on holiday or need a company car, we'll find the vehicle you need in seconds.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="hero hero--personas scrollOut" id="personas">
+        <div class="hero__shape hero__shape--top" data-negative="true">
+            <svg class="hero__shape__svg" width="100%" height="96px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none">
+                <path class="hero__shape__path" d="M0,0 C16.6666667,66 33.3333333,99 50,99 C66.6666667,99 83.3333333,66 100,0 L100,100 L0,100 L0,0 Z"></path>
+            </svg>
+        </div>
+        <div class="wrapper">
+            <div class="grid__row--medium">
+                <h3 class="hero__heading primary--colour">How we can help you</h3>
+                <p class="grid__row hero__description--main">Whether you’re an individual, a business owner, a broker or a rental company, we’ll take the strain out of finding the right vehicle in the right place at the right time.</p>
+            </div>
+            <div class="grid__row">
+                <div class="segment__wrapper">
+                    <div class="segment">
+                        <span class="selection"></span>
+                        <div class="option">
+                            <input onclick="tab1()" type="radio" id="Individual" name="industry" value="Individual" checked>
+                            <label for="Individual"><span>Individual</span></label>
+                        </div>
+                        <div class="option">
+                            <input onclick="tab2()" type="radio" id="Business" name="industry" value="Business">
+                            <label for="Business"><span>Business</span></label>
+                        </div>
+                        <div class="option">
+                            <input onclick="tab3()" type="radio" id="Broker" name="industry" value="Broker">
+                            <label for="Broker"><span>Broker</span></label>
+                        </div>
+                        <div class="option">
+                            <input onclick="tab4()" type="radio" id="Rental" name="industry" value="Rental">
+                            <label for="Rental"><span>Rental company</span></label>
+                        </div>
+                    </div>
+                    <div class="segment__spacer"></div>
+                </div>
+            </div>
+            <div class="segment__content__wrapper" id="tabs">
+                <div id="tab1__content" class="segment__content segment__content--active">
+                    <div class="grid__row--large">
+                        <div class="grid__card grid__card--personas">
+                            <div>
+                                <h4 class="grid__card__header">Hiring for your <span class="primary--colour">yourself?</span></h4>
+                                <div class="grid__card__description">Need a van to move home? Struggling to find a seven-seater for your holiday? We have you covered. Vehicle Hire Network takes the stress away from hiring your perfect vehicle. Whatever you need...</div>
                             </div>
-                            <ul class="nav__list__mobile">
-                                <li class="nav__item__mobile"><a class="primary--colour" href="https://bookings.vehiclehirenetwork.com/signup">Sign up</a></li>
-                                <li class="nav__item__mobile"><a href="https://bookings.vehiclehirenetwork.com/login">Log in</a></li>
-                                <li class="nav__item__mobile"><a href="javascript:void(0);" id="contactMobileBtn">Contact</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <section class="widget__wrapper">
-            <div class="wrapper">
-                <vhn-form hire-company-id="PROHIRE" api-url="https://bookings.vehiclehirenetwork.com/api/"></vhn-form>
-            </div>
-        </section>
-        <section class="hero hero--main">
-            <div class="wrapper">
-                <div class="grid grid--2--col">
-                    <div class="grid__col grid__col--justify--center">
-                        <h2 class="grid__row hero__heading--main">
-                            <span class="primary--colour">Network</span> of local independent rental companies across the U<span class="letter--spacing">K</span>.
-                        </h2>
-                        <p class="grid__row hero__description--main">
-                            Whether you are moving home, delivering chilled food, going on holiday or need a company car, Vehicle Hire Network will find the vehicle you need in seconds.
-                        </p>
-                        <div class="grid__row">
-                            <a id="supplierBtn" class="btn--large site__btn site__btn--primary border--radius--l" href="javascript:void(0);">Want to become a supplier?</a>
                         </div>
                     </div>
-                    <div class="grid__col grid__col--justify--center hide--on--mobile">
-                        <img loading="lazy" src="img/vehicles.jpg" alt="VHN Vehicles" class="hero__image--main img--block">
+                    <div class="grid__row">
+                        <div class="hero__heading__small">Key Features</div>
                     </div>
-                </div>
-            </div>
-        </section>
-        <section class="hero hero--about" id="about">
-            <div class="wrapper">
-                <div class="grid grid--2--col">
-                    <div class="grid__col grid__col--justify--center">
-                        <div class="hero__image__wrapper">
-                            <img loading="lazy" src="img/about.svg" alt="VHN What is VHN?" class="hero__image--center img--block">
+                    <div class="grid__row">
+                        <div class="grid grid--3--col">
+                            <div class="grid__col">
+                                <div class="grid__row">
+                                    <h4 class="grid__card__header">
+                                        <span>Easy Booking Process</span>
+                                    </h4>
+                                    <div class="grid__card__description">Enter your location, chosen dates and vehicle type, and we’ll search our network of independent suppliers for a vehicle near you.</div>
+                                </div>
+                            </div>
+                            <div class="grid__col">
+                                <div class="grid__row">
+                                    <h4 class="grid__card__header">
+                                        <span>Powerful Search</span>
+                                    </h4>
+                                    <div class="grid__card__description">Our unique search facility will locate the vehicle you need in seconds and we’ll only display a vehicle if it’s available for your chosen dates.</div>
+                                </div>
+                            </div>
+                            <div class="grid__col">
+                                <div class="grid__row">
+                                    <h4 class="grid__card__header">
+                                        <span>Rental Operators Who Care</span>
+                                    </h4>
+                                    <div class="grid__card__description">Vehicle Hire Network is made up of over 400 independent suppliers who pride themselves on offering high levels of customer care.</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="grid__col grid__col--justify--center">
-                        <h3 class="hero__heading secondary--colour">What is Vehicle Hire Network?</h3>
-                        <p class="hero__description">Vehicle Hire Network is a connected community of over 400 independent rental companies across England, Northern Ireland, Scotland and Wales.</p>
-                        <p class="hero__description">With a collective fleet of over 75,000 vehicles including cars, vans, trucks, minibuses and campers, we’re sure to have the vehicle you need.</p>
-                        <p class="hero__description">Whether you are moving home, delivering chilled food, going on holiday or need a company car, our unique search facility will find the vehicle you need in seconds.</p>
+                    <div class="grid__row">
+                        <a class="site__btn btn--large site__btn--primary signup__button" href="https://bookings.vehiclehirenetwork.com/signup">
+                            <span>Try for free</span>
+                        </a>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="hero hero--local">
-            <div class="wrapper">
-                <div class="grid grid--2--col grid--image--right">
-                    <div class="grid__col grid__col--justify--center relative">
-                        <h3 class="hero__heading primary--colour">Support your local rental company</h3>
-                        <p class="hero__description">Vehicle Hire Network is made up of over 650 rental locations across the UK so wherever you are, we’ll have a local operator to assist with your needs.</p>
-                        <p class="hero__description">Members are also likely to be family run businesses that pride themselves on delivering high levels of customer care. That’s why we love independent rental.</p>
-                    </div>
-                    <div class="grid__col grid__col--justify--center">
-                        <div class="hero__image__wrapper">
-                            <img loading="lazy" src="img/local.svg" alt="Local Rental Company" class="hero__image--right img--block">
+                <div id="tab2__content" class="segment__content">
+                    <div class="grid__card grid__card--personas">
+                        <div>
+                            <h4 class="grid__card__header">Hiring for your <span class="primary--colour">business?</span></h4>
+                            <div class="grid__card__description">Need a refrigerated vehicle for that extra delivery? Struggling to find a tipper for your chosen dates? We have you covered. Vehicle Hire Network takes the stress away from hiring your perfect vehicle. Whatever you need...</div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
-        <section class="hero hero--find">
-            <div class="wrapper">
-                <div class="grid grid--2--col">
-                    <div class="grid__col grid__col--justify--center">
-                        <div class="hero__image__wrapper">
-                            <img loading="lazy" src="img/find.svg" alt="VHN Search Engine" class="hero__image--left img--block">
+                    <div class="grid__row">
+                        <div class="hero__heading__small">Key Features</div>
+                    </div>
+                    <div class="grid grid--3--col">
+                        <div class="grid__col">
+                            <div class="grid__row">
+                                <h4 class="grid__card__header">Powerful Search</h4>
+                                <div class="grid__card__description">Need a luton with a tail lift or a van with a towbar? Use filters and keywords to find vehicles with particular features in seconds.</div>
+                            </div>
+                        </div>
+                        <div class="grid__col">
+                            <div class="grid__row">
+                                <h4 class="grid__card__header">Account Access</h4>
+                                <div class="grid__card__description">Placing account business? Apply for a new account with a rental company or link an existing account to Vehicle Hire Network.</div>
+                            </div>
+                        </div>
+                        <div class="grid__col">
+                            <div class="grid__row">
+                                <h4 class="grid__card__header">Bookings & Documents</h4>
+                                <div class="grid__card__description">Want to manage everything in one place? Sign up and login to view and manage your bookings and documents from a single screen.</div>
+                            </div>
                         </div>
                     </div>
-                    <div class="grid__col grid__col--justify--center relative">
-                        <h3 class="hero__heading tertiary--colour">Find the vehicle you need in seconds</h3>
-                        <p class="hero__description">Our unique search platform only displays vehicles that are actually available for your chosen dates, reducing search time and getting you on the road quicker.</p>
-                        <p class="hero__description">Our unique platform will search over 75,000 vehicles in just seconds and display vehicles and rental operators near you.</p>
+                    <div class="grid__row">
+                        <a class="site__btn btn--large site__btn--primary signup__button" href="https://bookings.vehiclehirenetwork.com/signup">
+                            <span>Try for free</span>
+                        </a>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="hero hero--model">
-            <div class="wrapper">
-                <div class="grid grid--2--col grid--image--right">
-                    <div class="grid__col grid__col--justify--center relative">
-                        <h3 class="hero__heading secondary--colour">Need a specific model?</h3>
-                        <p class="hero__description">Use our model search facility to find a specific vehicle and view its location on a map. We’ll only display the vehicle if the rental company actually has one available, even when completing a model search.</p>
-                    </div>
-                    <div class="grid__col grid__col--justify--center">
-                        <div class="hero__image__wrapper">
-                            <img loading="lazy" src="img/model.svg" alt="VHN Model Search" class="hero__image--right img--block">
+                <div id="tab3__content" class="segment__content">
+                    <div class="grid__card grid__card--personas">
+                        <div>
+                            <h4 class="grid__card__header">Hiring as a <span class="primary--colour">broker?</span></h4>
+                            <div class="grid__card__description">Struggling to find an unusual vehicle for your chosen dates? Need an exact model for a vehicle replacement? We have you covered. Vehicle Hire Network takes the stress away from hiring your perfect vehicle. Whatever you need...</div>
                         </div>
                     </div>
+                    <div class="grid__row">
+                        <div class="hero__heading__small">Key Features</div>
+                    </div>
+                    <div class="grid grid--3--col">
+                        <div class="grid__col">
+                            <div class="grid__row">
+                                <h4 class="grid__card__header">Diverse Fleet</h4>
+                                <div class="grid__card__description">With a fleet of over 75,000 vehicles including vans, trucks, minibuses and more, we’re sure to have the vehicle you need.</div>
+                            </div>
+                        </div>
+                        <div class="grid__col">
+                            <div class="grid__row">
+                                <h4 class="grid__card__header">Powerful Search</h4>
+                                <div class="grid__card__description">Need a luton with a tail lift or a van with a towbar? Use filters and keywords to our find vehicles with particular features in seconds.</div>
+                            </div>
+                        </div>
+                        <div class="grid__col">
+                            <div class="grid__row">
+                                <h4 class="grid__card__header">Live Availability</h4>
+                                <div class="grid__card__description">Tired of calling rental companies to confirm availability? We’ll only display vehicles if they’re actually available for your chosen dates.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__row">
+                        <a class="site__btn btn--large site__btn--primary signup__button" href="https://bookings.vehiclehirenetwork.com/signup">
+                            <span>Try for free</span>
+                        </a>
+                    </div>
+                </div>
+                <div id="tab4__content" class="segment__content">
+                    <div class="grid__card grid__card--personas">
+                        <div>
+                            <h4 class="grid__card__header">Hiring for your <span class="primary--colour">rental company?</span></h4>
+                            <div class="grid__card__description">Struggling to replace a vehicle currently on hire? Need extra fleet to cover a busy period? We have you covered. Vehicle Hire Network takes the stress away from hiring your perfect vehicle. Whatever you need...</div>
+                        </div>
+                    </div>
+                    <div class="grid__row">
+                        <div class="hero__heading__small">Key Features</div>
+                    </div>
+                    <div class="grid grid--3--col">
+                        <div class="grid__col">
+                            <div class="grid__row">
+                                <h4 class="grid__card__header">Powerful Search</h4>
+                                <div class="grid__card__description">Need a luton with a tail lift or a van with a towbar? Use filters and keywords to find vehicles with particular features in seconds.</div>
+                            </div>
+                        </div>
+                        <div class="grid__col">
+                            <div class="grid__row">
+                                <h4 class="grid__card__header">Account Access</h4>
+                                <div class="grid__card__description">Placing account business? Apply for a new account with a rental company or link an existing account to Vehicle Hire Network.</div>
+                            </div>
+                        </div>
+                        <div class="grid__col">
+                            <div class="grid__row">
+                                <h4 class="grid__card__header">Model Search</h4>
+                                <div class="grid__card__description">Replacing a vehicle on hire? Find an exact replacement nearby with our unique model search facility.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__row">
+                        <a class="site__btn btn--large site__btn--primary signup__button" href="https://bookings.vehiclehirenetwork.com/signup">
+                            <span>Try for free</span>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </section>
-        <section class="hero hero--signup">
+        </div>
+    </section>
+    <section class="hero hero--testimonial scrollOut">
+        <div class="hero__bg"></div>
+        <div class="hero__shape hero__shape--top" data-negative="true">
+            <svg class="hero__shape__svg" width="100%" height="96px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none">
+                <path class="hero__shape__path" d="M0,0 C16.6666667,66 33.3333333,99 50,99 C66.6666667,99 83.3333333,66 100,0 L100,100 L0,100 L0,0 Z"></path>
+            </svg>
+        </div>
+        <div class="wrapper">
+            <h1 class="hero__heading">What our clients have to say<span class="letter--spacing">.</span><span class="letter--spacing">.</span><span class="letter--spacing">.</span></h1>
+            <blockquote class="testimonial__quote hero__description">
+                <p class="testimonial__text grid__row">Global Go! are a proud advocate and user of Vehicle Hire Network. It opens up our brand to the entire country, enabling the general public to access our range of products and services locally. It’s an excellent product for consumers and an excellent sales aid for rental companies.</p>
+                <footer class="testimonial__meta">
+                    <div>
+                        <cite class="testimonial__author">Gareth Jones</cite>
+                        <div class="testimonial__position">Group CEO, Global Go!</div>
+                    </div>
+                </footer>
+            </blockquote>
+        </div>
+        <div class="hero__shape hero__shape--bottom" data-negative="true">
+            <svg class="hero__shape__svg" width="100%" height="96px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none">
+                <path class="hero__shape__path" d="M0,0 C16.6666667,66 33.3333333,99 50,99 C66.6666667,99 83.3333333,66 100,0 L100,100 L0,100 L0,0 Z"></path>
+            </svg>
+        </div>
+    </section>
+    <section class="hero hero--supplier scrollOut" id="supplier">
+        <div class="wrapper">
+            <div class="grid grid--2--col grid--image--right">
+                <div class="grid__col grid__col--justify--center relative">
+                    <div class="hero__heading__small">Supplier</div>
+                    <h3 class="hero__heading secondary--colour">Become a supplier</span></h3>
+                    <p class="hero__description">Do you run an independent rental company? Do you want to be seen by a larger audience? Vehicle Hire Network creates opportunities for rental operators that were previously unavailable.</p>
+                    <p class="hero__description">Contact us today to find out more.</p>
+                    <div class="grid__row">
+                        <a class="btn--large site__btn site__btn--secondary" href="javascript:void(0);" id="supplierBtn">Contact Us</a>
+                    </div>
+                </div>
+                <div class="grid__col grid__col--justify--center">
+                    <div class="hero__image__wrapper">
+                        <img loading="lazy" src="img/supplier.svg" alt="Become a VHN Supplier" class="hero__image--right img--block">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="hero hero--faq scrollOut" id="faq">
+            <div class="hero__shape hero__shape--top" data-negative="true">
+                <svg class="hero__shape__svg" width="100%" height="96px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none">
+                    <path class="hero__shape__path" d="M0,0 C16.6666667,66 33.3333333,99 50,99 C66.6666667,99 83.3333333,66 100,0 L100,100 L0,100 L0,0 Z"></path>
+                </svg>
+            </div>
             <div class="wrapper">
                 <div class="grid__row">
-                    <h3 class="signup__heading"><a href="https://bookings.vehiclehirenetwork.com/signup">Sign up now</a> to access these additional features</h3>
+                    <div class="hero__heading__small">FAQ</div>
+                    <h3 class="hero__heading primary--colour">You may have some questions<span class="letter--spacing">.</span><span class="letter--spacing">.</span><span class="letter--spacing">.</span></h3>
+                    <p class="hero__description">Here are our most commonly asked.</p>
                 </div>
-                <div class="grid grid--3--col">
-                    <div class="grid__col">
-                        <div class="grid__card">
-                            <div class="grid__card__icon"><img loading="lazy" src="img/search.svg" alt="VHN Search Icon" class="img--block"></div>
-                            <h4 class="grid__card__header">Model Search</h4>
-                            <div class="grid__card__description">Need a specific vehicle? Our powerful model search finds an exact make and model in seconds and we’ll only display a vehicle if it's available for you.</div>
-                        </div>
+                <div class="grid__row">
+                    <div class="faq hero__description">
+                        <details>
+                            <summary>What is Vehicle Hire Network?</summary>
+                            <div class="details__content">Vehicle Hire Network is a connected community of over 400 independent rental companies across England, Northern Ireland, Scotland and Wales.</div>
+                        </details>
+                        <details>
+                            <summary>How do I know a vehicle is available for my chosen dates?</summary>
+                            <div class="details__content">We’ll only display a vehicle if it is actually available for your chosen dates, so you can book with confidence.</div>
+                        </details>
+                        <details>
+                            <summary>Can I search for a specific make and model?</summary>
+                            <div class="details__content">Yes, once logged in, users can use our unique model search facility to find an exact vehicle in seconds.</div>
+                        </details>
+                        <details>
+                            <summary>I need a more bespoke vehicle. Can you help?</summary>
+                            <div class="details__content">Yes, with a diverse fleet of over 75,000 vehicles including cars, vans, trucks, minibuses and more, we’re sure to have the vehicle you need.</div>
+                        </details>
+                        <details>
+                            <summary>Can I view and manage all my bookings in one place?</summary>
+                            <div class="details__content">Yes, simply sign up for free and login to view and manage all your rental bookings and documents in one place.</div>
+                        </details>
+                        <details>
+                            <summary>Can I place account business?</summary>
+                            <div class="details__content">Yes, once logged in, users can apply for a new account with a rental company or link to an existing one.</div>
+                        </details>
                     </div>
-                    <div class="grid__col">
-                        <div class="grid__card">
-                            <div class="grid__card__icon"><img loading="lazy" src="img/account.svg" alt="VHN Account Icon" class="img--block"></div>
-                            <h4 class="grid__card__header">Account Access</h4>
-                            <div class="grid__card__description">Placing account business? Once logged in, users can apply for an account with a rental company or link an existing account to Vehicle Hire Network.</div>
-                        </div>
-                    </div>
-                    <div class="grid__col">
-                        <div class="grid__card">
-                            <div class="grid__card__icon"><img loading="lazy" src="img/documents.svg" alt="VHN Documents Icon" class="img--block"></div>
-                            <h4 class="grid__card__header">Bookings & Documents</h4>
-                            <div class="grid__card__description">Want to manage all your bookings and documents in one place? Sign up today to view and manage all bookings and documents from a single screen.</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="grid__row only--show--on--mobile">
-                    <a class="site__btn btn--large site__btn--secondary signup__button" href="https://bookings.vehiclehirenetwork.com/signup">Sign up</a>
                 </div>
             </div>
         </section>
-    </div>
-    <footer class="footer">
+    <footer class="footer scrollOut">
+        <div class="hero__shape hero__shape--top" data-negative="true">
+            <svg class="hero__shape__svg" width="100%" height="96px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none">
+                <path class="hero__shape__path" d="M0,0 C16.6666667,66 33.3333333,99 50,99 C66.6666667,99 83.3333333,66 100,0 L100,100 L0,100 L0,0 Z"></path>
+            </svg>
+        </div>
         <div class="wrapper">
             <div class="footer__content">
                 <img loading="lazy" src="logo.svg" alt="Footer VHN Logo" class="footer__image img--block">
@@ -309,105 +564,35 @@
             </div>
         </div>
     </div>
-    <script src="https://bookings.vehiclehirenetwork.com/wc/vhn-wc-es2015.js" type="module"></script>
-    <script src="https://bookings.vehiclehirenetwork.com/wc/vhn-wc-es5.js" nomodule defer></script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174900532-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-174900532-1');
-    </script>
-
-    <!-- Facebook Pixel Code -->
-    <script>
-        !function(f,b,e,v,n,t,s)
-        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-            n.queue=[];t=b.createElement(e);t.async=!0;
-            t.src=v;s=b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t,s)}(window, document,'script',
-            'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '615019349400506');
-        fbq('track', 'PageView');
-    </script>
-    <noscript>
-        <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=615019349400506&ev=PageView&noscript=1"/>
-    </noscript>
-    <!-- End Facebook Pixel Code -->
-
-    <script>
-        let vh = window.innerHeight * 0.01;
-        document.documentElement.style.setProperty('--vh', `${vh}px`);
-        window.addEventListener('resize', () => {
-            vh = window.innerHeight * 0.01;
-            document.documentElement.style.setProperty('--vh', `${vh}px`);
-        });
-
-        let url = new URL(location.href);
-        let c = url.searchParams.get("form");
-
-        if (c && c === "contact") {
-            document.documentElement.classList.add('hide--overflow');
-            document.getElementById('contact__form').classList.add('site__modal--active');
-        }
-
-        if (c && c === "supplier") {
-            document.documentElement.classList.add('hide--overflow');
-            document.getElementById('supplier__form').classList.add('site__modal--active');
-        }
-
-        document.getElementById('menuBtn').addEventListener("click", () => {
-            document.getElementById('menuBtn').classList.toggle('nav__menu__btn--active');
-            document.getElementById('mobileNav').classList.toggle('mobile__nav--active');
-
-            if (document.documentElement.classList.contains('hide--overflow')) {
-                document.documentElement.classList.remove('hide--overflow');
-            }
-        });
-
-        document.getElementById('supplierBtn').addEventListener("click", () => {
-            document.documentElement.classList.add('hide--overflow');
-            document.getElementById('supplier__form').classList.add('site__modal--active');
-            history.pushState(null, null, "supplier");
-        });
-
-        document.getElementById('contactBtn').addEventListener("click", () => {
-            document.documentElement.classList.add('hide--overflow');
-            document.getElementById('contact__form').classList.add('site__modal--active');
-            history.pushState(null, null, "contact");
-        });
-
-        document.getElementById('contactMobileBtn').addEventListener("click", () => {
-            document.documentElement.classList.add('hide--overflow');
-            document.getElementById('contact__form').classList.add('site__modal--active');
-            history.pushState(null, null, "contact");
-        });
-
-        document.querySelectorAll('.site__modal__close').forEach(item => {
-            item.addEventListener('click', event => {
-                document.documentElement.classList.remove('hide--overflow');
-                document.getElementById('supplier__form').classList.remove('site__modal--active');
-                document.getElementById('contact__form').classList.remove('site__modal--active');
-            });
-        });
-
-        document.addEventListener('keydown', event => {
-            if ( event.keyCode === 27 ) {
-                document.documentElement.classList.remove('hide--overflow');
-                document.getElementById('supplier__form').classList.remove('site__modal--active');
-                document.getElementById('contact__form').classList.remove('site__modal--active');
-            }
-        });
-
-        window.addEventListener('popstate', (event) => {
-            document.documentElement.classList.remove('hide--overflow');
-            document.getElementById('supplier__form').classList.remove('site__modal--active');
-            document.getElementById('contact__form').classList.remove('site__modal--active');
-        });
-    </script>
+    <div class="scripts">
+        <script src="./js/main.js"></script>
+        <script src="./js/scrollOut.js"></script>
+        <script src="./js/segment.js"></script>
+        <script src="./js/video.js"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174900532-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-174900532-1');
+        </script>
+        <script>
+            !function(f,b,e,v,n,t,s)
+            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+                n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+                if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+                n.queue=[];t=b.createElement(e);t.async=!0;
+                t.src=v;s=b.getElementsByTagName(e)[0];
+                s.parentNode.insertBefore(t,s)}(window, document,'script',
+                'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '615019349400506');
+            fbq('track', 'PageView');
+        </script>
+        <noscript>
+            <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=615019349400506&ev=PageView&noscript=1"/>
+        </noscript>
+        <script src="https://bookings.vehiclehirenetwork.com/wc/vhn-wc-es2015.js" type="module"></script>
+        <script src="https://bookings.vehiclehirenetwork.com/wc/vhn-wc-es5.js" nomodule defer></script>
+    </div>
 </body>
-
 </html>

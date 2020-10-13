@@ -1,0 +1,78 @@
+.faq {
+    margin-top: var(--spacing-xxxxl);
+}
+
+details {
+    margin-bottom: var(--spacing-xxl);
+    box-shadow: var(--box-shadow);
+    background-color: var(--white);
+    border-radius: var(--border-radius);
+}
+
+summary {
+    cursor: pointer;
+    outline: 0 none;
+    position: relative;
+    padding: var(--spacing-xxl);
+    padding-right: calc(var(--spacing-xxl) + 28px);
+    font-weight: var(--font-weight-bold);
+    transition: color var(--transition-l);
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 13px;
+    height: 30px;
+    width: 30px;
+    background: url(../img/arrow-down.svg) no-repeat center;
+    background-size: cover;
+    transition: transform var( --transition-l);
+}
+
+details[open] summary:after {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+details[open] summary {
+    box-shadow: 0 1px var(--border-colour-light);
+}
+
+details:not([open]) summary:hover,
+details[open] summary {
+    color: var(--primaryColour);
+}
+
+.details__content {
+    padding: var(--spacing-xxl);
+}
+
+details[open] summary ~ .details__content {
+    animation: open 1s ease-out;
+    animation-fill-mode: forwards;
+    will-change: opacity, max-height;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+}
+
+@keyframes open {
+    0% {
+        opacity: 0;
+        max-height: 0;
+    }
+    65% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+        max-height: 220px;
+    }
+}
