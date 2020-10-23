@@ -16,6 +16,7 @@
 @import "scrollOut.css";
 @import "vhn-widget.css";
 @import "footer.css";
+@import "blog.css";
 
 .hide--overflow {
     overflow: hidden;
